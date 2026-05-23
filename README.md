@@ -24,19 +24,19 @@ The focus is not only on modeling, but on **feature engineering, model interpret
 
 📉 Result:
 
-◈ Accuracy: **0.80**\
+◈ Accuracy: **0.80**
 ◈ Limitation: linear decision boundary
 
 ### 2. Feature Engineering
 
 New features were created to capture non-linear relationships:
 
-**Average** → overall performance\
-**Synergy (Exam1 * Exam2)** → interaction between variables\
-**Difference** → consistency between exams\
-**Ratio** → relative performance\
-**Max / Min** → best and worst scores\
-**Squared features** → allow curved boundaries\
+**Average** → overall performance
+**Synergy (Exam1 * Exam2)** → interaction between variables
+**Difference** → consistency between exams
+**Ratio** → relative performance
+**Max / Min** → best and worst scores
+**Squared features** → allow curved boundaries
 **Distance to Ideal (100,100)** → key feature
 
 The *distance to ideal* captures overall performance in a single variable.
@@ -57,8 +57,8 @@ Using:
 
 * The model learns a **non-linear decision boundary**\
 * Admission is driven by:\
-    - overall performance (distance)\
-    - consistency (minimum score)\
+  - overall performance (distance)\
+  - consistency (minimum score)\
 * Logistic regression produces **probabilities (sigmoid output)**, not just classes
 
 ---
@@ -67,16 +67,16 @@ Using:
 
 The project includes an interactive dashboard built in Power BI:
 
-✔️ KPI: total students and admission rate\
-✔️ Scatter plot: Exam 1 vs Exam 2 colored by probability\
-✔️ Relationship: distance vs probability\
+✔️ KPI: total students and admission rate
+✔️ Scatter plot: Exam 1 vs Exam 2 colored by probability
+✔️ Relationship: distance vs probability
 ✔️ Filters for exploration
 
 📌 Insight:
 
 > Students closer to the ideal point (100,100) have significantly higher admission probability.
 
-![dashboard](image.png)
+![dashboard](images/dashboard.png)
 
 ---
 
@@ -122,17 +122,17 @@ jupyter notebook
 
 ## 🧠 Key Takeaways
 
-✔️ Feature engineering can outperform complex models\
-✔️ Logistic regression can model non-linear behavior with proper transformations\
-✔️ Visualization (Power BI) is critical to communicate insights\
+✔️ Feature engineering can outperform complex models
+✔️ Logistic regression can model non-linear behavior with proper transformations
+✔️ Visualization (Power BI) is critical to communicate insights
 ✔️ Probabilities provide more information than binary predictions
 
 ---
 
 ## ⚠️ Limitations
 
-‼ Small dataset → possible overfitting\
-‼ High accuracy may not generalize\
+‼ Small dataset → possible overfitting
+‼ High accuracy may not generalize
 ‼ Results depend heavily on engineered features
 
 ---
